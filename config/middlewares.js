@@ -5,7 +5,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://aiazent.vercel.app'],
+      origin: ['https://aiazent.vercel.app','http://localhost:1234'],
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       credentials: true,
     },
