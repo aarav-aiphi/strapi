@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_editors",
+  "info": {
+    "displayName": "Editor",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "Ck_Editor": {
+      "type": "customField",
+      "options": {
+        "preset": "default"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

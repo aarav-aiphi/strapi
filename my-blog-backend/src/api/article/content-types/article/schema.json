@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": "Create your blog content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "articles"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "articles"
+    },
+    "Body": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.video",
+        "shared.table",
+        "shared.slider",
+        "shared.quote",
+        "shared.media",
+        "shared.rich-text",
+        "shared.editor"
+      ]
+    },
+    "publishedat": {
+      "type": "date"
+    },
+    "statuss": {
+      "type": "enumeration",
+      "enum": [
+        "Published",
+        "Draft"
+      ]
+    },
+    "readingTime": {
+      "type": "integer"
+    },
+    "authors_2": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author2.author2",
+      "inversedBy": "author2"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "tags"
+    }
+  }
+}

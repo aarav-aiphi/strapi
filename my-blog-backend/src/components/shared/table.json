@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_tables",
+  "info": {
+    "displayName": "Table",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "Table": {
+      "type": "json"
+    }
+  }
+}
