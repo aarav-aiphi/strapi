@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-11-12T18:55:27.265Z"
+    "x-generation-date": "2024-11-30T05:39:36.380Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -5452,6 +5452,9 @@
                   "example": "string or id"
                 }
               },
+              "isNews": {
+                "type": "boolean"
+              },
               "locale": {
                 "type": "string"
               },
@@ -6460,6 +6463,9 @@
                         "description": {
                           "type": "string"
                         },
+                        "isNews": {
+                          "type": "boolean"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -6728,6 +6734,9 @@
                         }
                       }
                     },
+                    "isNews": {
+                      "type": "boolean"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -6924,6 +6933,9 @@
                 }
               }
             }
+          },
+          "isNews": {
+            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -8268,6 +8280,9 @@
                     "description": {
                       "type": "string"
                     },
+                    "isNews": {
+                      "type": "boolean"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -8535,6 +8550,9 @@
                       }
                     }
                   }
+                },
+                "isNews": {
+                  "type": "boolean"
                 },
                 "createdAt": {
                   "type": "string",
@@ -9609,6 +9627,9 @@
                     "description": {
                       "type": "string"
                     },
+                    "isNews": {
+                      "type": "boolean"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -9877,6 +9898,9 @@
                     }
                   }
                 },
+                "isNews": {
+                  "type": "boolean"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -10026,6 +10050,9 @@
               },
               "description": {
                 "type": "string"
+              },
+              "isNews": {
+                "type": "boolean"
               },
               "locale": {
                 "type": "string"
@@ -10959,6 +10986,9 @@
                     "description": {
                       "type": "string"
                     },
+                    "isNews": {
+                      "type": "boolean"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -11227,6 +11257,9 @@
                     }
                   }
                 },
+                "isNews": {
+                  "type": "boolean"
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -11283,6 +11316,9 @@
           },
           "description": {
             "type": "string"
+          },
+          "isNews": {
+            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -13408,6 +13444,9 @@
                     "description": {
                       "type": "string"
                     },
+                    "isNews": {
+                      "type": "boolean"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -13675,6 +13714,9 @@
                       }
                     }
                   }
+                },
+                "isNews": {
+                  "type": "boolean"
                 },
                 "createdAt": {
                   "type": "string",
